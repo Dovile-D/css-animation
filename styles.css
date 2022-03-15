@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    background-color: #253237;
+}
+
+.fonas {
+    height: 100vh;
+    
+    background-image: url("./src/img/miskas.jpeg");
+    background-size: cover;
+    animation-duration: 15s;
+    animation-name: rytas;
+    z-index: 1;
+
+}
+
+img{
+    height: 100px;
+}
+
+.moon {
+    width: 10%;
+    height: 10%;
+    position: relative;
+    top: 0;
+    left: 40%;
+    right: 0;
+    bottom: 0;
+    animation-duration: 15s;
+    animation-name: plaukia;
+    z-index: 2;
+}
+
+.birds {
+    width: 10%;
+    height: 10%;
+    position: relative;
+    top: 0;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+    animation-duration: 10s;
+    animation-name: skrenda;
+    z-index: 2;
+    
+}
+
+
+@keyframes rytas {
+    from {
+        opacity: 0.1;
+        
+    }
+    to {
+        opacity: 1;
+        
+    }
+}
+
+@keyframes plaukia {
+    from { 
+        opacity: 1;
+        top: 10%;
+        left: 40%;
+    }
+
+    to {
+        opacity: 0;
+        top: 20%;
+        left: 70%;
+    }
+}
+
+@keyframes skrenda {
+    0% { left: 0px; top: 3%; opacity: 1;}
+    25% { left: 10%; top: 8%; opacity: 0.9;}
+    50% { left: 25%; top: 2%; opacity: 0.8;}
+    75% { left: 35%; top: 6%; opacity: 0.7;}
+    100% { left: 60%; top: 0%; opacity: 0;}
+}
